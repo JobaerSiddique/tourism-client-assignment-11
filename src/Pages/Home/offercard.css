@@ -1,0 +1,7 @@
+.offer{
+    width: 400 px;
+    height: 300 px;
+    background-color: #E25326;
+    padding: 12px;
+    clip-path: polygon(9% 0, 99% 0, 94% 100%, 0% 100%);
+}
