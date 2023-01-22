@@ -1,12 +1,12 @@
 [
     {
         "tourName":"Dhaka-Cox’s Bazar – Dhaka",
-        "day":"4 days",
-        "night":"3 Nights",
+        "day":"3 days",
+        "night":"2 Nights",
         "location":"Cox’s Bazar",
         "group":"6 Person",
         "Min":"2 Person",
-        "price":"8,500",
+        "price":"8500",
         "img":[
             "https://i.ibb.co/LkWhbkP/cox-1.jpg",
             "https://i.ibb.co/yYbcD86/cox-2.jpg",
@@ -14,6 +14,9 @@
         ],
         "descrip":"Miles of golden sand, towering cliffs, surfing waves, colorful pagodas, Buddhist temples and tribes, delightful seafood — this is Cox's Bazar, the tourist capital of Bangladesh.There are also a few very old wooden Buddhist temples at Ramu, a few kilometers from Cox's Bazar, well worth visiting. A drive to Teknaf, which is the southernmost tip of the mainland of Bangladesh, is a memorable journey. A day trip to either Moheshkhali or Sonadia, the deltaic islands nestled among the gentle waves of the Bay of Bengal, will also be really interesting. Other attractions for visitors are conch shell market, tribal handicraft, salt and prawn cultivation",
         "short":"Miles of golden sand, towering cliffs, surfing waves, colorful pagodas, Buddhist temples and tribes, delightful seafood — this is Cox's Bazar, the tourist capital of Bangladesh"
+        
+        
+        
     },
     {
         "tourName":"Sajek Valley Group Tour Package",
@@ -22,7 +25,7 @@
         "location":"Sajek Valley",
         "group":"6 Person",
         "Min":"2 Person",
-        "price":"3,500",
+        "price":"3500",
         "img":[
             "https://i.ibb.co/cwwNSmR/sajk-3.jpg",
             "https://i.ibb.co/NrJZp8M/sajk-1.jpg",
@@ -38,7 +41,7 @@
         "location":"Teknaf",
         "group":"6 Person",
         "Min":"2 Person",
-        "price":"9,500",
+        "price":"9500",
         "img":[
             "https://i.ibb.co/Z62jkhL/saint-3.jpg",
             "https://i.ibb.co/CPWCJVq/saint-1.jpg",
@@ -54,7 +57,7 @@
         "location":"Kuakata",
         "group":"6 Person",
         "Min":"2 Person",
-        "price":"8,500",
+        "price":"8500",
         "img":[
             "https://i.ibb.co/DbLR40m/kuakata-3.jpg",
             "https://i.ibb.co/K2QZT5h/kuakata-2.jpg",
@@ -70,7 +73,7 @@
         "location":"Sundarban",
         "group":"6 Person",
         "Min":"2 Person",
-        "price":"8,500",
+        "price":"8500",
         "img":[
             "https://i.ibb.co/XYMk3SZ/sandar-2.jpg",
             "https://i.ibb.co/ZLtTHCd/sandar-3.jpg",
@@ -86,7 +89,7 @@
         "location":"Srimongal",
         "group":"6 Person",
         "Min":"2 Person",
-        "price":"10,500",
+        "price":"10500",
         "img":[
             "https://i.ibb.co/2Y6BsNt/srimon-2.jpg",
             "https://i.ibb.co/DgmKzGh/srimon-3.jpg",

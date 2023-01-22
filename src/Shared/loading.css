@@ -1,7 +1,0 @@
-.cube {
-    transform: scaleX(1) scaleY(1) scaleZ(2.4) rotateX(272deg) rotateY(360deg) rotateZ(360deg) translateX(29px) translateY(-2px) translateZ(-45px) skewX(21deg) skewY(2deg);
-  }
-  .cube-wrap {
-    perspective: 1000px;
-    perspective-origin: 50% 32%;
-  }
