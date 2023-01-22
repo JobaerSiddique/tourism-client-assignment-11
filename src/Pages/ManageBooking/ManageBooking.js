@@ -5,37 +5,18 @@ import { toast } from 'react-hot-toast';
 const ManageBooking = () => {
     const [books,setBooks]= useState([])
     useEffect(()=>{
-        fetch('http://localhost:5000/bookings')
+        fetch('https://tourism-server-assi-11-5i8f.vercel.app/bookings')
         .then(res=>res.json())
         .then(data=>{
            console.log(data)
            setBooks(data)
         })
     },[])
-    const handleDeleteOn=(id)=>{
-        const procced = window.confirm("are you Want to delete This Book")
-        if(procced){
-         fetch(`http://localhost:5000/bookings/${id}`,{
-             method:"DELETE",
-         })
-         .then(res=>res.json())
-         .then(data=>{
-             console.log("delete",data)
-            
-             if(data.deletedCount >0){
-                const remaining = books.filter(bo=> bo._id !== id)
-                setBooks(remaining)
-                toast.success("delete Suceesfully")
-             }
-         })
-        }
-        else{toast.error("Please Try Again")}
-        
-     }
+    
      const handleDelete=(id)=>{
         const procced = window.confirm("are you Want to delete This Book")
         if(procced){
-         fetch(`http://localhost:5000/bookings/${id}`,{
+         fetch(`https://tourism-server-assi-11-5i8f.vercel.app/bookings/${id}`,{
              method:"DELETE",
          })
          .then(res=>res.json())

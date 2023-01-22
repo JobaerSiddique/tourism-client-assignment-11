@@ -61,7 +61,7 @@ const OfferInfo = () => {
        price
        
     }
-    fetch('http://localhost:5000/bookings',{
+    fetch('https://tourism-server-assi-11-5i8f.vercel.app/bookings',{
       method:"POST",
       headers:{
         "content-type":"application/json"

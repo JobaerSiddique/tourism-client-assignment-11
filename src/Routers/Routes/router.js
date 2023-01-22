@@ -31,7 +31,7 @@ const router = createBrowserRouter([
             {
                 path:'/offers/:id',
                 element:<PrivateRoute><OfferInfo/></PrivateRoute>,
-                loader:({params})=> fetch(`http://localhost:5000/offers/${params.id}`)
+                loader:({params})=> fetch(`https://tourism-server-assi-11-5i8f.vercel.app/offers/${params.id}`)
             },
             {
                 path:'/mybooking',
