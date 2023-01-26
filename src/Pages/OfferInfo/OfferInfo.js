@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, useNavigate } from 'react-router-dom';
 import Slider from 'react-slick';
 import { SlLocationPin } from 'react-icons/sl';
 import { useForm } from 'react-hook-form';
@@ -35,7 +35,7 @@ const OfferInfo = () => {
    
     return total;
   }
-
+const navigate = useNavigate()
   const handleBook =(data)=>{
    
     const firstName = data.firstName;
@@ -58,10 +58,11 @@ const OfferInfo = () => {
        message,
        totals,
        location, 
-       price
+       price,
+       tourName
        
     }
-    fetch('https://tourism-server-assi-11-5i8f.vercel.app/bookings',{
+    fetch('http://localhost:5000/bookings',{
       method:"POST",
       headers:{
         "content-type":"application/json"
@@ -70,11 +71,15 @@ const OfferInfo = () => {
     }) 
     .then(res=>res.json())
     .then(data=>{
-      console.log("post sucessfully",data)
+      if(data.acknowledged){
+        console.log(data)
+        navigate('/mybooking')
       toast.success(`Booking Succesfully ${location}`,{
         duration:6000
       })
      
+      }
+      
     })  
     
     

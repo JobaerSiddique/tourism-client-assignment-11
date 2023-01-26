@@ -13,6 +13,7 @@ const Header = () => {
     {user && <>
       <li><Link to="/mybooking">MyBookings</Link></li>
       <li><Link to="/managebooking">ManageBooking</Link></li>
+      <li><Link to="/addOfferings">Add Offerings</Link></li>
     </>}
   {user?.uid? <li><button onClick={signOut}>logout <span>{user?.displayName}</span></button></li> :  <li><Link to="/login">Login</Link></li>}
     </>

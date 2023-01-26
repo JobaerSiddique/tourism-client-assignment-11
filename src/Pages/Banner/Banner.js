@@ -34,7 +34,7 @@ const Banner = () => {
    
   
     return (
-        <div className="carousel w-full  ">
+        <div className="carousel w-full  lg:py-2 ">
         {
             banneritem.map(banner=><BannerItems
             key={banner.id}

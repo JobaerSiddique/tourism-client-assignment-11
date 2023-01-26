@@ -7,7 +7,7 @@ const MyBooking = () => {
     const[bookings,setBookings]=useState([]) 
     const {user}=useContext(AuthContext)
     useEffect(()=>{
-        fetch(`https://tourism-server-assi-11-5i8f.vercel.app/bookings?email=${user.email}`)
+        fetch(`http://localhost:5000/bookings?email=${user.email}`)
         .then(res=>res.json())
         .then(data=>{
             console.log(data)
@@ -17,7 +17,7 @@ const MyBooking = () => {
     const handleDelete=(id)=>{
         const procced = window.confirm("are you Want to delete This Book")
         if(procced){
-         fetch(`https://tourism-server-assi-11-5i8f.vercel.app/bookings/${id}`,{
+         fetch(`http://localhost:5000/bookings/${id}`,{
              method:"DELETE",
          })
          .then(res=>res.json())
@@ -54,6 +54,7 @@ const MyBooking = () => {
         <th>Price</th>
         <th>Person</th>
         <th>Total Price</th>
+        <th>Pay</th>
         <th></th>
 
       </tr>
