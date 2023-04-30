@@ -5,7 +5,7 @@ import { toast } from 'react-hot-toast';
 const ManageBooking = () => {
     const [books,setBooks]= useState([])
     useEffect(()=>{
-        fetch('https://tourism-server-assi-11-5i8f.vercel.app/bookings')
+        fetch('https://tourisum-server.vercel.app/bookings')
         .then(res=>res.json())
         .then(data=>{
            console.log(data)
@@ -16,7 +16,7 @@ const ManageBooking = () => {
      const handleDelete=(id)=>{
         const procced = window.confirm("are you Want to delete This Book")
         if(procced){
-         fetch(`https://tourism-server-assi-11-5i8f.vercel.app/bookings/${id}`,{
+         fetch(`https://tourisum-server.vercel.app/bookings/${id}`,{
              method:"DELETE",
          })
          .then(res=>res.json())

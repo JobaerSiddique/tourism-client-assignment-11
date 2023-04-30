@@ -34,7 +34,7 @@ const AddOfferings = () => {
     
               }
                 console.log(adding)
-              fetch('http://localhost:5000/offers', {
+              fetch('https://tourisum-server.vercel.app/offers', {
                 method: 'POST', 
                 headers: {
                   'content-type': 'application/json',

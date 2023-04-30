@@ -34,7 +34,7 @@ const router = createBrowserRouter([
             {
                 path:'/offers/:id',
                 element:<PrivateRoute><OfferInfo/></PrivateRoute>,
-                loader:({params})=> fetch(`https://tourism-server-assi-11.vercel.app/offers/${params.id}`)
+                loader:({params})=> fetch(`https://tourisum-server.vercel.app/offers/${params.id}`)
             },
             {
                 path:'/mybooking',
@@ -55,13 +55,9 @@ const router = createBrowserRouter([
             {
                 path:'/payment/:id',
                 element:<Payment/>,
-                loader:({params})=> fetch(`https://tourism-server-assi-11.vercel.app/bookings/${params.id}`)
+                loader:({params})=> fetch(`https://tourisum-server.vercel.app/bookings/${params.id}`)
             },
-            {
-                path:'/success/:id',
-                element:<PaymentSuccess/>,
-                loader:({params})=> fetch(`https://tourism-server-assi-11.vercel.app/bookings/${params.id}`)
-            },
+            
         ]
     }
 ])

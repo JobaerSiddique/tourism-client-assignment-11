@@ -7,7 +7,7 @@ const Offerings = () => {
     const [offerings,setOfferings]= useState([])
 
     useEffect(()=>{
-        fetch('https://tourism-server-assi-11.vercel.app/offers')
+        fetch('https://tourisum-server.vercel.app/offers')
         .then(res=>res.json())
         .then(data=>{
             setOfferings(data)

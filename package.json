@@ -2,11 +2,13 @@
   "name": "tours-clients",
   "version": "0.1.0",
   "private": true,
+  
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "aos": "^3.0.0-beta.6",
+    "axios": "^1.2.5",
     "daisyui": "^2.47.0",
     "firebase": "^9.15.0",
     "react": "^18.2.0",

@@ -1,40 +1,51 @@
+import axios from 'axios';
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 
-const Payment = () => {
-    const data = useLoaderData()
-    console.log(data)
-    const {customerName,email,phone,totals,tourName} = data
 
-    const handlePayment = ()=>{
-        const Info = {
-            total_amount:totals,
-            cus_name:customerName,
-            cus_email:email,
-            cus_phone:phone,
-            product_name:tourName,
-            paymentStatus:'pending'
-        }
-        console.log(Info)
-        fetch('https://tourism-server-assi-11.vercel.app/init',{
-            method:"POST",
-            headers:{
-                'content-type':'application/json'
-            },
-            body:JSON.stringify(Info)
+const Payment = () => {
+   const data = useLoaderData()
+   const {customerName,email,totals} = data;
+
+   const payment=()=>{
+    const info = {
+      
+      total_amount: totals,
+      cus_name: customerName,
+      cus_email:email
+      
+  }
+  console.log(info)
+  fetch(`http://localhost:5000/init`,{
+    method:"POST",
+    headers:{
+     
+      'content-Type':'application/json'
+    },
+    body:JSON.stringify(info)
+  })
+        .then(res =>{
+          if (res.status !== 200)  {
+            console.log("error")
+          } 
+          else {
+            res.json().then(data => {
+              console.log(data)
+            })
+          }
         })
-        .then(res=>res.json())
-        .then(data=>{
+        .then(data => {
             console.log(data);
             window.location.replace(data)
         })
-        .catch(err=>{
-            console.log(err)
-        })
-    }
+        
+   }
+    
+    
     return (
-        <div className='my-20'>
-            <button onClick={handlePayment} className='btn btn-primary'>Pay</button>
+        <div>
+
+          <button onClick={payment} className='my-20 btn-btn-outline btn-info w-full'>Pay</button>
         </div>
     );
 };
