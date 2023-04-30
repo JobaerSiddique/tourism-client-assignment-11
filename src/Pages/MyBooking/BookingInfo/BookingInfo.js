@@ -16,7 +16,7 @@ const BookingInfo = ({booking, handleDelete}) => {
         <td>{phone}</td>
         <td className='text-center'>{price}</td>
         <td className='text-center'>{person}</td>
-        <td className='text-center'>$ {totals} 
+        <td className='text-center font-bold'>$ {totals} 
          <span>(incluing Vat 5%)</span></td>
          <td><Link to={`/payment/${_id}`}><button className='btn btn-sm btn-primary'>Pay</button></Link></td>
         <td><button onClick={()=>handleDelete(_id)} className="btn btn-circle btn-outline">
